@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<base:DetailPageHeaderViewXaml
+xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+x:Class="dpark.Views.MapSearch.DetailPageHeaderView"
+xmlns:base="clr-namespace:dpark.Views.MapSearch">
+
+  <base:DetailPageHeaderViewXaml.Content>
+    <AbsoluteLayout HeightRequest="285">
+    
+      <Image AbsoluteLayout.LayoutFlags="All"
+        AbsoluteLayout.LayoutBounds="0,0,1,1"
+        x:Name="SpaceImage"
+        Aspect="AspectFill"
+        Source="{Binding temp.ImageURL}" />
+
+      <ActivityIndicator
+        AbsoluteLayout.LayoutFlags="WidthProportional, PositionProportional"
+        AbsoluteLayout.LayoutBounds="0,0.5,1,AutoSize"
+        BindingContext="{x:Reference SpaceImage}"
+        IsEnabled="{Binding IsLoading}"
+        IsVisible="{Binding IsLoading}"
+        IsRunning="{Binding IsLoading}" />
+      
+    </AbsoluteLayout>
+  </base:DetailPageHeaderViewXaml.Content>
+</base:DetailPageHeaderViewXaml>
