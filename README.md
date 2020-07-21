@@ -4,4 +4,7 @@ App for locating accessible marked parking stalls will include basic format to l
 Available for download:
 
 App Store - https://itunes.apple.com/us/app/disability-parking-locator/id1196537075?ls=1&mt=8
+
 Google Play - https://play.google.com/store/apps/details?id=com.lyon.us.dparkus
+
+Thank you!
